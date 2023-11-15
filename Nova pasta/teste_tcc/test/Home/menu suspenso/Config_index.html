@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="../index.js"></script>
+</head>
+<body>
+    <!-- Navbar responsável pela parte superior-->
+    <div class="navbar">
+        <img class="profile-pic" src="seu-perfil.jpg" alt="Sua Foto de Perfil">
+        <a href="../home_index.html">Home</a>
+        <a href="../musica_index.html">Música</a>
+        <a href="../cinema_index.html">Cinema</a>
+        <a href="../games_index.html">Games</a>
+        <!-- Ícone de Aria -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+         <!-- Menu suspenso -->
+    <div class="menu-dropdown" id="menuDropdown">
+        <a href="../menu suspenso/Perfil.html">Perfil</a>
+        <a href="../menu suspenso/Conta_index.html">Conta</a>
+        <a href="../menu suspenso/Config_index.html">Configurações</a>
+        <a href="#">Sair</a>
+    </div>
+    </div>
+    <header>
+        <h1>Configurações</h1>
+    </header>
+    
+    
+    <section class="configuracoes">
+        <form action="#" method="post">
+            <h2>Preferências de Usuário</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu Email">
+            
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" name="idioma">
+                <option value="portugues">Português</option>
+                <option value="ingles">Inglês</option>
+                <option value="espanhol">Espanhol</option>
+            </select>
+            
+            <label for="notificacoes">Notificações:</label>
+            <input type="checkbox" id="notificacoes" name="notificacoes">
+            <br>
+            
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+</body>
+</html>

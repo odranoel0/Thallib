@@ -1,0 +1,59 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px; /* Adicionando um espaçamento para dispositivos menores */
+}
+
+.error-container {
+    background-color: #fff;
+    max-width: 100%; /* Utilize toda a largura disponível */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3rem; /* Tamanho da fonte responsivo */
+    color: #FF0000;
+}
+
+p {
+    font-size: 1.5rem; /* Tamanho da fonte responsivo */
+    margin-top: 10px;
+}
+
+a {
+    display: inline-block; /* Agora os links ficam em linha */
+    text-decoration: none;
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px 20px; /* Aumente o espaçamento para dispositivos menores */
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #CC0000;
+}
+
+/* Estilos específicos para dispositivos menores */
+@media (max-width: 768px) {
+    .error-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    a {
+        padding: 8px 16px;
+    }
+}

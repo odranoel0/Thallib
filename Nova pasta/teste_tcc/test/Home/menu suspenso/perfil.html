@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Home</title> 
+    <script src="../index.js"></script>
+</head>
+<body>
+    <!-- Navbar responsável pela parte superior-->
+    <div class="navbar">
+        <img class="profile-pic" src="seu-perfil.jpg" alt="Sua Foto de Perfil">
+        <a href="home_index.html">Home</a>
+        <a href="musica_index.html">Música</a>
+        <a href="cinema_index.html">Cinema</a>
+        <a href="games_index.html">Games</a>
+        <!-- Ícone de Aria -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+         <!-- Menu suspenso -->
+         <div class="menu-dropdown" id="menuDropdown">
+            <a href="../menu suspenso/Perfil.html">Perfil</a>
+            <a href="../menu suspenso/Conta_index.html">Conta</a>
+            <a href="../menu suspenso/Config_index.html">Configurações</a>
+            <a href="#">Sair</a>
+        </div>
+    </div>
+    <div id="userProfile">
+        <img id="userPhoto" src="" alt="Foto do usuário">
+        <h2 id="userName">Nome do Usuário</h2>
+        <p id="userEmail">E-mail do Usuário</p>
+
+        <a href="perfil-edit.html">Editar Perfil</a>
+    </div>
+    
+    <button id="signOutButton">Sair da Conta</button>
+
+    <div id="profileCard">
+        <!-- Aqui serão exibidas as informações de portfólio e nome de usuário -->
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="../Cadastro/config.js"></script>
+    <script src="index.js"></script>
+    <script src="js/perfil.js"></script>
+    <script src="../Cadastro/config.js"></script>
+</body>
+</html>
